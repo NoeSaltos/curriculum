@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.experience-container, .skills-container, .education-container {
+    display: grid; /* O puedes usar display: flex; */
+    grid-template-columns: repeat(2, 1fr); /* Cambia a repeat(3, 1fr) para tres columnas */
+    gap: 20px; /* Espacio entre elementos */
+    padding: 20px;
+}
+
+.job, .skill, .degree {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#formu {
+
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+   
+}
+
+/* Encabezado del formulario */
+#formu label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #27768A;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Inputs y Textarea */
+#formu input[type="text"],
+#formu input[type="email"],
+#formu textarea,
+#formu select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #589DA4;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #d8eff2a5;
+    color: #27768A;
+}
+
+#formu input[type="text"]::placeholder {
+    color: #9b9d98;
+}
+
+#formu textarea {
+    resize: vertical;
+}
+
+/* Checkboxes */
+#formu div {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+#formu input[type="checkbox"] {
+    accent-color: #589DA4;
+    margin-right: 8px;
+}
+
+/* Select */
+#intereses {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #85A156;
+    border-radius: 8px;
+    background-color: #F0F5E2;
+    color: #27768A;
+    font-size: 1rem;
+}
+
+/* Botón de envío */
+#formu button[type="submit"] {
+    background-color: #589DA4;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+#formu button[type="submit"]:hover {
+    background-color: #85A156;
+}
+#formu input::placeholder,
+#formu textarea::placeholder {
+    font-style: italic;
+    color: #9b9d98; /* Color del placeholder para que combine con la paleta */
+}
+
+/*---------------------------IMAGEN ----*/
+/* Contenedor de la imagen (opcional, para centrar) */
+.image-container {
+    grid-area: D;
+    align-self: center; 
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* Estilo para la imagen */
+.image-container img {
+    border-radius: 50%; /* Bordes redondeados */
+    /*border: 5px solid #589DA4; Borde con color de la paleta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición */
+}
+
+/* Efecto hover (cuando el usuario pasa el ratón sobre la imagen) */
+.image-container img:hover {
+    transform: scale(1.05); /* Agranda la imagen al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta la sombra */
+}
+
+/* Efecto de superposición (overlay) */
+.image-container img::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(39, 118, 138, 0.4), rgba(117, 189, 68, 0.4));
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container img:hover::after {
+    opacity: 1;
+}
+
+
+

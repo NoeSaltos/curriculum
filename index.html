@@ -4,32 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Currículum Vitae</title>
+    <title>Curriculum NASH</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/pruebas.css">
 </head>
 
 <body>
     <header>
-        <h1>Noelia Alejandra Saltos Hernández</h1>
-        <p>Estudiante de Ingeniería en Ciencias de la Computación | noeasalt@espol.edu.ec | 0969702333</p>
+        <a id="nombre" href="#presentacion">Noelia Saltos </a> 
+        <nav >
+            <ul class="nav_links">
+                <li><a href="#resumen">Resumen</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+            </ul>
+        </nav>
+        <ul id="contacto">
+        <li><a href="#formulario">Contáctame </a></li> </ul>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#resumen">Resumen</a></li>
-            <li><a href="#experiencia">Experiencia</a></li>
-            <li><a href="#educacion">Educación</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-        </ul>
-    </nav>
+    
 
     <main>
+        
+        <section id="inicio">
+            <div class="wrap1-1 wrap1-2" id="presentacion">
+                <div class="area-a">
+                    <h1>Hola! soy Noelia <br> Saltos Hernández</h1>
+                    <p>Estudiante de Ingeniería en Ciencias de la Computación <br> noeasalt@espol.edu.ec | 0969702333</p>
+                </div>
+                <div class="image-container">
+                <img id="fotomia" src="img/foto mia.jpg" alt="Foto perfil" width="350" height="350">
+            </div>
+        </div>
+    </section>
         <section id="resumen">
+       
             <h2 class="subtitle">Resumen</h2>
-            <p>Breve descripción de tus habilidades y experiencia.</p>
+            <p>Soy una estudiante de Ciencias de la Computación apasionada por la tecnología, con una personalidad curiosa y audaz que me impulsa a explorar y descubrir constantemente mis habilidades. Disfruto enfrentar desafíos, tanto en programación como en el aprendizaje de nuevas herramientas y lenguajes, con el fin de resolver problemas de manera eficiente y creativa. Mi entusiasmo por la innovación me lleva a buscar siempre nuevos proyectos y experiencias que fortalezcan mi conocimiento y me permitan desarrollar soluciones efectivas y bien fundamentadas. Estoy comprometida con el aprendizaje continuo y con aportar mis habilidades a equipos de trabajo que compartan esta visión de crecimiento y evolución en el ámbito tecnológico.</p>
 
-            <img id="photo" src="https://placehold.co/300x200" alt="Placeholder Image" width="600" height="400">
+            <img id="photo" src="https://placehold.co/600x400" alt="Placeholder Image" width="600" height="400">
 
         </section>
 
@@ -59,48 +74,104 @@
             </table>
         </section>
 
-        <section id="certificaciones">
+        <!-- <section id="certificaciones">
             <h2>Certificaciones</h2>
             <ul>
                 <li>Certificado de Pentester Mentor Junior - Hacker Mentor Certification</li>
                 <li>Introducción a Redes de datos - Cisco Certification</li>
             </ul>
-        </section>
-
+        </section> -->
+<!-- 
         <section id="educacion">
             <h2>Educación</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509674!2d144.9537353155042!3d-37.816279742234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce6e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2s!4v1601127970741!5m2!1sen!2s"
-                width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-                      </iframe>
-        </section>
+            
+        </section> -->
 
         <section id="habilidades">
-            <h2>Habilidades</h2>
+            <h2 class="subtitle">Habilidades</h2>
+            <h2>Lenguajes de programación: <br></h2>
+    <div class="skills-grid">
+        <div class="skill">
+            <img src="img/java logo.png" alt="Java">
+            <div class="progress-bar">
+              <div class="progress" style="--progress-width: 80%;" id="Java"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <img src="img/JavaS.png" alt="JavaS">
+            <div class="progress-bar" >
+              <div class="progress" style="--progress-width: 70%;" id="JavaS"></div>
+            </div>
+          </div>
+          <!-- Repite para otras habilidades --> 
+          <div class="skill">
+            <img src="img/python.png" alt="Python">
+            <div class="progress-bar">
+              <div class="progress" style="--progress-width: 80%;" id="Python"></div>
+            </div>
+          </div>        
+      <div class="skill">
+        <img src="img/C_Logo.png" alt="C">
+        <div class="progress-bar" >
+          <div class="progress" style="--progress-width: 80%;" id="C"></div>
+        </div>
+      </div>
+      <!-- Agrega más habilidades aquí siguiendo el mismo formato -->
+    </div>
+            
         </section>
 
         <section id="proyectos">
             <h2>Proyectos</h2>
+            <div class="experience-container">
+                <div class="job">
+                    <h3>Desarrollador Web</h3>
+                    <p>Empresa XYZ</p>
+                    <p>Año - Presente</p>
+                    <ul>
+                        <li>Responsabilidad 1</li>
+                        <li>Responsabilidad 2</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3>Asistente de Investigación</h3>
+                    <p>Universidad ABC</p>
+                    <p>Año - Año</p>
+                    <ul>
+                        <li>Responsabilidad 1</li>
+                        <li>Responsabilidad 2</li>
+                    </ul>
+                </div>
+            </div>
+            
 
         </section>
-        <section id="formulario">
-        <form>
+
+        <section id="formulario">    
+            <div class="wrap1-1 wrap1-2">
+            <div id="divform">
+            <form id="formu">
             <label for="nombre">Nombre Completo:</label>
-            <input type="text" id="nombre" name="nombre" required>
+            <input type="text" id="nombreForm" name="nombre" placeholder="e.g Noelia Saltos..." required>
             <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="experiencia">Experiencia Laboral:</label>
-            <textarea id="experiencia" name="experiencia" rows="5" required></textarea>
-            <label for="educacion">Educación:</label>
-            <textarea id="educacion" name="educacion" rows="5" required></textarea>
-            <label>Habilidades Técnicas:</label><br>
+            <input type="email" id="email" name="email" placeholder="e.g noelia@mail.com" required>
+            <label for="experiencia">Experiencia Laboral requerida:</label>
+            <textarea id="experienciaa" name="experiencia" rows="3" placeholder="e.g Me interesa su perfil..." required></textarea>
+            <!-- <label for="educacion">Educación:</label>
+            <textarea id="educacion" name="educacion" rows="5" required></textarea> -->
+            <label>Habilidades Técnicas:</label>
             <div>
                 <input type="checkbox" name="habilidades" value="HTML">
                 <span>HTML</span>
             </div>
-            <input type="checkbox" name="habilidades" value="CSS"> CSS
+            <div>
+            <input type="checkbox" name="habilidades" value="CSS"> 
+            <span>CSS</span>
+            </div>
+            <div>
             <input type="checkbox" name="habilidades" value="JavaScript">
             JavaScript
+            </div>  
             <label for="intereses">Intereses:</label>
             <select id="intereses" name="intereses">
                 <option value="desarrollo">Desarrollo Web</option>
@@ -109,7 +180,15 @@
             </select>
             <button type="submit">Enviar</button>
         </form>
-
+        </div>
+        <div>
+        <h2>Si deseas una reunion presencial me puedes encontrar en:</h2>
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.023651934657!2d-79.9704587254543!3d-2.1446259978362816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7303bb0133cd%3A0x66c18bd9810f31cb!2sFacultad%20de%20Ingenier%C3%ADa%20en%20Electricidad%20y%20Computaci%C3%B3n%20FIEC%20-%20ESPOL!5e0!3m2!1ses!2sec!4v1730267063335!5m2!1ses!2sec"
+         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+        </div>
         </section>
     </main>
 
