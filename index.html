@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum NASH</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
-    <link rel="stylesheet" href="/stylesheets/pruebas.css">
+    <link rel="stylesheet" href="/stylesheets/otros.css">
 </head>
 
 <body>
     <header>
         <a id="nombre" href="#presentacion">Noelia Saltos </a> 
-        <nav >
+        <nav  >
             <ul class="nav_links">
                 <li><a href="#resumen">Resumen</a></li>
                 <li><a href="#experiencia">Experiencia</a></li>
@@ -42,37 +42,69 @@
         <section id="resumen">
        
             <h2 class="subtitle">Resumen</h2>
+            <div>
             <p>Soy una estudiante de Ciencias de la Computación apasionada por la tecnología, con una personalidad curiosa y audaz que me impulsa a explorar y descubrir constantemente mis habilidades. Disfruto enfrentar desafíos, tanto en programación como en el aprendizaje de nuevas herramientas y lenguajes, con el fin de resolver problemas de manera eficiente y creativa. Mi entusiasmo por la innovación me lleva a buscar siempre nuevos proyectos y experiencias que fortalezcan mi conocimiento y me permitan desarrollar soluciones efectivas y bien fundamentadas. Estoy comprometida con el aprendizaje continuo y con aportar mis habilidades a equipos de trabajo que compartan esta visión de crecimiento y evolución en el ámbito tecnológico.</p>
-
-            <img id="photo" src="https://placehold.co/600x400" alt="Placeholder Image" width="600" height="400">
-
+            </div>
+            <div class="video-container">
+            <iframe width="500" height="315" src="https://www.youtube.com/embed/wg3tIeVUcHM?si=myIJCuBj_7FhIFBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
         </section>
 
         <section id="experiencia">
             <h2 class="subtitle">Experiencia</h2>
-            <p>
-                Trabajé como desarrollador web en Acme Corporation durante los últimos
-                tres años.
-                Mis responsabilidades incluían el diseño, desarrollo y mantenimiento de
-                sitios web.
-            </p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Empresa</th>
-                        <th>Puesto</th>
-                        <th>Años de experiencia</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Acme Corporation</td>
-                        <td>Desarrollador web</td>
-                        <td>3</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="experience-grid">
+                <!-- Tabla de experiencia -->
+                <div class="experience-details">
+                    <p>
+                        He trabajado como ayudante de cátedra en diversas materias, lo que me ha permitido desarrollar habilidades
+                        técnicas y de comunicación. Entre mis responsabilidades, destaco la enseñanza en sistemas de bases de datos
+                        y soporte técnico en computación.
+                    </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Asignatura</th>
+                                <th>Rol</th>
+                                <th>Duración</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sistemas de Bases de Datos</td>
+                                <td>Ayudante de Cátedra</td>
+                                <td>6 meses</td>
+                            </tr>
+                            <tr>
+                                <td>Computación y Sociedad</td>
+                                <td>Ayudante de Cátedra</td>
+                                <td>1 año</td>
+                            </tr>
+                            <tr>
+                                <td>Soporte Técnico</td>
+                                <td>Asistente Técnico</td>
+                                <td>2 años</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        
+                <!-- Certificaciones -->
+                <div class="certifications">
+                    <h3>Certificaciones</h3>
+                    <ul>
+                        <li>
+                            <img src="/img/hacker.jpeg" alt="Pentester Mentor Junior - Hacker Mentor Certification">
+                            Certificado de Pentester Mentor Junior - Hacker Mentor Certification
+                        </li>
+                        <li>
+                            <img src="/img/cisco.png" alt="Introducción a Redes de datos - Cisco Certification">
+                            Introducción a Redes de datos - Cisco Certification
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
+        
 
         <!-- <section id="certificaciones">
             <h2>Certificaciones</h2>
@@ -89,7 +121,7 @@
 
         <section id="habilidades">
             <h2 class="subtitle">Habilidades</h2>
-            <h2>Lenguajes de programación: <br></h2>
+            <h3>Lenguajes de programación: <br></h3>
     <div class="skills-grid">
         <div class="skill">
             <img src="img/java logo.png" alt="Java">
@@ -122,21 +154,31 @@
         </section>
 
         <section id="proyectos">
-            <h2>Proyectos</h2>
+            <h2 class="subtitle">Proyectos</h2>
             <div class="experience-container">
-                <div class="job">
-                    <h3>Desarrollador Web</h3>
-                    <p>Empresa XYZ</p>
-                    <p>Año - Presente</p>
+                <div class="job" id="tecni">
+                    <h3>Aplicación</h3>
+                    <p>Administrador de inventario de una empresa.</p>
+                    <img src="/img/tecnicentrorp.png
+                    " alt="" width="300" height="200" >
                     <ul>
                         <li>Responsabilidad 1</li>
                         <li>Responsabilidad 2</li>
                     </ul>
                 </div>
-                <div class="job">
-                    <h3>Asistente de Investigación</h3>
-                    <p>Universidad ABC</p>
-                    <p>Año - Año</p>
+                <div class="job" id="contact">
+                    <h3>Aplicación</h3>
+                    <p>Administrador de contactos</p>
+                    <img src="/img/agenda.png" alt="" width="300" height="200" >
+                    <ul>
+                        <li>Responsabilidad 1</li>
+                        <li>Responsabilidad 2</li>
+                    </ul>
+                </div>
+                <div class="job" id="juego">
+                    <h3>Aplicación</h3>
+                    <p>Juego Tic Tac Toe</p>
+                    <img src="/img/tictactoe.png" alt="" width="300" height="200" >
                     <ul>
                         <li>Responsabilidad 1</li>
                         <li>Responsabilidad 2</li>
@@ -144,11 +186,12 @@
                 </div>
             </div>
             
+            
 
         </section>
 
         <section id="formulario">    
-            <div class="wrap1-1 wrap1-2">
+            <div class="wrap1-1 wrap1-2 wrap1-3">
             <div id="divform">
             <form id="formu">
             <label for="nombre">Nombre Completo:</label>
@@ -182,7 +225,7 @@
         </form>
         </div>
         <div>
-        <h2>Si deseas una reunion presencial me puedes encontrar en:</h2>
+        <h3>Si deseas una reunion presencial me puedes encontrar en:</h3>
         <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.023651934657!2d-79.9704587254543!3d-2.1446259978362816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7303bb0133cd%3A0x66c18bd9810f31cb!2sFacultad%20de%20Ingenier%C3%ADa%20en%20Electricidad%20y%20Computaci%C3%B3n%20FIEC%20-%20ESPOL!5e0!3m2!1ses!2sec!4v1730267063335!5m2!1ses!2sec"
          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">

@@ -50,7 +50,7 @@ section{
    /* margin: 4px 2px 8px 2px;  */
    margin: 0 auto;
    /* borde de grosor 0.2 en puntos, estilo sólido y color hexadecimal #cedddd  */
-   border: 0.2pt solid #cedddd; 
+
 
    /* relleno (espacio interno) de 
    1.5% en la parte superior e inferior y 
@@ -68,20 +68,18 @@ section{
 
    /* en navegadores basados en WebKit, 
    como versiones antiguas de Safari y Chrome. */
-   -webkit-border-radius: 5px; 
+ 
 
    /* en navegadores antiguos de Mozilla, 
    como Firefox.  */
-   -moz-border-radius: 5px;    
+  
 
    /* en navegadores modernos. */
-   border-radius: 5px;
+  
    
    /* sombra a un elemento */
 
-   -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
-   -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
-   box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+   
  
  }
  
@@ -111,7 +109,8 @@ section{
 
   /*Guia 05*  ------------------NAV--------------------------------*/
 
- 
+
+
   #nombre{
   color: #000;
   font-weight: bold;
@@ -129,6 +128,7 @@ section{
     /* Modelo de diseño flexible */
     display: flex;									
     justify-content: flex-end;
+  
   }
 
 .nav_links li a {
@@ -221,42 +221,35 @@ h1::after {
 }
 /*-----------------Resumen---------------------*/
 #resumen {
-    display: grid;
-    align-items: center;
-    justify-content: space-around;
-    align-items: stretch;
-    grid-column-gap: 7cap;  
-    grid-template-areas: "A D" 
-                         "A D";
-    
-
-}
-#resumen h2{
-    grid-area: A;
-}
-#resumen p{
-    grid-area: D;
-    margin: 0;
-    text-align: justify;
-    align-self: center;
-    justify-self: center;
-    font-size: 1.2rem;
-
-}
-#resumen img{
-    margin: 0;
-    grid-area: A;
-    align-self: center; 
-    justify-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+      "titulo titulo"
+      "video texto";
 }
 
-body {
+#resumen h2 {
+  grid-area: titulo;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+#resumen p {
+  grid-area: texto;
+  font-size: 1.2rem;
+  text-align: justify;
   margin: 0;
-  padding: 0;
+  padding: 0 1rem;
 }
+
+.video-container {
+  grid-area: video;
+  justify-self: center;
+  justify-items: center;
+}
+
 section{
   padding-top: 7%;
-
 }
 
 /* #resumen{
@@ -308,9 +301,14 @@ section form {
   grid-template-columns: 2fr 1fr;
   gap: 70px;
 }
+.wrap1-3 {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 70px;
+}
 
 @media (max-width: 767px) {
-  .wrap1-2, .wrap1-1{
+  .wrap1-2, .wrap1-1, .wrap1-3{
       gap: 15px;
       grid-template-columns: 1fr;
   }
@@ -368,3 +366,106 @@ section form {
 .skill:hover #C{
   width: 50%;
 }
+/*----------------------Experiencia---------------*/
+
+
+.subtitle {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.experience-details {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table thead {
+  background-color: #4CAF50;
+  color: white;
+}
+
+table th,
+table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.certifications {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.certifications h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.certifications ul {
+  list-style: none;
+  padding: 0;
+}
+
+.certifications li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.certifications img {
+  width: 60px;
+  height: auto;
+  margin-right: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/*---------------------titulos en h2-------*/
+h2 {
+  font-size: 2.5rem; /* Tamaño del texto */
+  color: #E6EAF1; /* Color del texto, basado en un tono suave de la paleta */
+  text-align: left; /* Puedes cambiar a center o right si prefieres */
+  font-weight: 600; /* Hace que el texto sea semi-negrita */
+  margin-bottom: 0.5em; /* Espacio inferior para separar del contenido */
+
+  /* Subrayado con degradado */
+
+}
+
+h2::after {
+  content: "";
+  display: block; /* Hace que el pseudo-elemento ocupe un bloque */
+  width: 50%; /* Largo de la línea */
+  height: 5px; /* Grosor de la línea */
+  background: linear-gradient(90deg, #84a9ac, #3b6978); /* Degradado del subrayado */
+  margin: 0.5em 0 0; /* Espacio entre el texto y la línea */
+}
+
+h2:hover {
+  color: #B2B8C3; /* Color más claro al pasar el cursor */
+  transition: color 0.3s ease; /* Transición suave */
+}
+
+h2::selection {
+  background-color: #3b6978; /* Fondo del texto al seleccionar */
+  color: #E6EAF1; /* Color del texto al seleccionar */
+}
+
