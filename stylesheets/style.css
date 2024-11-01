@@ -130,6 +130,9 @@ section{
     justify-content: flex-end;
   
   }
+.nav_links li{
+  position: relative;
+}
 
 .nav_links li a {
   text-decoration: none;
@@ -140,11 +143,21 @@ section{
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Hover effect */
-.nav_links li a:hover {
-  background-color: #27768a; /* Soft color for hover */
-  color: #fff; /* White text on hover */
+.nav_links li a::after {
+  content: "";
+  display: block; /* Hace que el pseudo-elemento ocupe un bloque */
+  width: 0; /* Inicialmente no se muestra */
+  height: 3px; /* Grosor de la línea */
+  background: #27768a; /* Color de la línea */
+  transition: width 0.3s ease; /* Transición suave para el efecto */
+  margin-top: 5px; /* Espacio entre el texto y la línea */
 }
+
+.nav_links li a:hover::after {
+  width: 100%; /* Aumenta el ancho al 100% al hacer hover */
+}
+
+
 
 #contacto{
   padding: 9px 25px;
