@@ -114,6 +114,7 @@ section{
   #nombre{
   color: #000;
   font-weight: bold;
+  font-size: 1.1em;
   cursor: pointer;
   order: 3;
   margin-left: auto;

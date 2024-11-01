@@ -11,9 +11,13 @@ body {
 
 .job, .skill, .degree {
     background-color: #f1f1f1;
-    border: 1px solid #ccc;
+    /* border: 1px solid #cccccc; */
     padding: 15px;
     border-radius: 5px;
+}
+.skill{
+    background-color: #c7d2d25d;
+    border-color: #c7d2d25d;
 }
 
 .job{
