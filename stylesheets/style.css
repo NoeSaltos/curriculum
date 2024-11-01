@@ -533,10 +533,27 @@ h2::selection {
     margin-bottom: 5px;
   }
 
-  #fotomia {
-    width: 100%;
-    height: auto;
+  #presentacion {
+    display: flex;
+    flex-direction: column; /* Pone los elementos en una columna */
+    align-items: center; /* Centra los elementos */   
+}
+
+.image-container {
+    padding-top: 70px;
+    order: -1; /* Mueve la imagen al principio */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    margin-bottom: 0;
   }
+
+#fotomia {
+    width: 80%; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 350px; /* Limita el ancho máximo */
+}
+
 
   .wrap1-1, .wrap1-2, .wrap1-3 {
     display: block;
@@ -566,6 +583,16 @@ h2::selection {
   .skill {
     width: 45%;
     margin: 5px;
+  }
+  .skill #JavaS{
+    width: 70%;
+  }
+
+  .skill #Java, .skill #Python{
+    width: 80%;
+  }
+  .skill #C{
+    width: 50%;
   }
 
   .experience-container {
