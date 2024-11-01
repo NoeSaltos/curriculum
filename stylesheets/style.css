@@ -483,3 +483,257 @@ h2::selection {
   color: #E6EAF1; /* Color del texto al seleccionar */
 }
 
+/*responsive-------------------------*/
+/* Estilos responsive */
+
+/* Pantallas pequeñas (smartphones) */
+@media (max-width: 600px) {
+  /* Ajustar el header y la navegación */
+  header {
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+  }
+
+  .menu-icon {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+  }
+
+  .nav_links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav_links.active {
+    display: flex;
+  }
+
+  .nav_links li {
+    margin-bottom: 5px;
+  }
+
+  #fotomia {
+    width: 100%;
+    height: auto;
+  }
+
+  .wrap1-1, .wrap1-2, .wrap1-3 {
+    display: block;
+    gap: 15px;
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 20px 10px;
+  }
+
+  .experience-grid {
+    display: block;
+  }
+
+  .experience-details, .certifications {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skill {
+    width: 45%;
+    margin: 5px;
+  }
+
+  .experience-container {
+    display: flex;
+    flex-direction: column; /* Pone los elementos en una sola columna */
+    gap: 20px; /* Añade espacio entre los elementos */
+}
+
+.job {
+    text-align: center; /* Centra el contenido de cada proyecto */
+}
+
+.job img {
+    width: 100%; /* Ajusta el ancho de las imágenes para que ocupen todo el contenedor */
+    height: auto; /* Mantiene la proporción de las imágenes */
+}
+
+  #formulario iframe {
+    width: 100%;
+    height: 300px;
+  }
+  #resumen {
+    display: block; /* Muestra los elementos en bloque vertical */
+    padding: 10px; /* Añade espacio interno */
+  }
+
+  #resumen h2 {
+    font-size: 2rem; /* Ajusta el tamaño de la fuente */
+  }
+
+  #resumen p {
+    font-size: 1rem; /* Ajusta el tamaño del texto */
+    padding: 0 5px; /* Reduce el padding para mayor espacio */
+  }
+
+  .video-container {
+    width: 100%; /* La video se adapta al ancho de la pantalla */
+    padding: 0;
+  }
+
+  .video-container iframe {
+    width: 100%; /* La video se adapta al ancho de la pantalla */
+    height: auto; /* Ajusta la altura automáticamente */
+  }
+  body{
+    padding-top: 6px;
+  }
+
+}
+
+
+/* Pantallas medianas (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  header {
+    padding: 10px 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    position: relative;
+    background-color: #fff;
+  }
+
+  .nav_links.active {
+    display: flex;
+  }
+
+  .wrap1-1, .wrap1-2, .wrap1-3 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .image-container, .area-a {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  #fotomia {
+    max-width: 250px;
+    height: auto;
+  }
+
+  .experience-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .experience-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  #resumen {
+    display: grid;
+    grid-template-columns: 1fr; /* Coloca los elementos en una sola columna */
+    gap: 20px; /* Añade espacio entre los elementos */
+    padding: 20px; /* Espacio interno */
+  }
+
+  #resumen p {
+    font-size: 1.1rem; /* Ajusta el tamaño del texto */
+    padding: 0 10px; /* Añade padding lateral */
+  }
+
+  .video-container {
+    justify-self: center; /* Centra el video */
+  }
+
+  .video-container iframe {
+    max-width: 80%; /* Limita el ancho del video */
+    height: auto; /* Ajusta la altura automáticamente */
+  }
+}
+
+/* Pantallas grandes (laptops y desktops) */
+@media (min-width: 1025px) {
+ .menu-toggle {
+    display: none;
+  }
+  /*
+  header {
+    padding: 20px 40px;
+  }
+
+ 
+
+  .nav_links {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav_links li a {
+    padding: 15px 20px;
+  }
+
+  .experience-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+
+  .experience-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  */
+} 
+
+
+

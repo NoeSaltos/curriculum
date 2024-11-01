@@ -8,13 +8,19 @@
     <meta name="description" content="Curriculum vitae de Noelia Saltos, estudiante destacada de Computación">
     <meta name="author" content="Noelia Alejandra Saltos Hernández">
     <title>Curriculum NASH</title>
-    <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="stylesheets/otros.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    
 </head>
 
 <body>
     <header>
         <a id="nombre" href="#presentacion">Noelia Saltos </a> 
+        <button class="menu-toggle" aria-label="Abrir menú">
+            <span class="menu-icon"></span>
+            <span class="menu-icon"></span>
+            <span class="menu-icon"></span>
+        </button>
         <nav  >
             <ul class="nav_links">
                 <li><a href="#resumen">Resumen</a></li>
@@ -245,6 +251,17 @@
             <li><a href="https://github.com/NoeSaltos">GitHub</a></li>
         </ul>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav_links');
+    
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 
 </html>
