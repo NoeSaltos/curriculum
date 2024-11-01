@@ -43,8 +43,8 @@ h1 {
     text-transform: uppercase;
 }
 section{
-  width: 100vw; /*  Ancho del 100% de la ventana */
-  min-height: 100vh;
+  /* width: 100vw;   Ancho del 100% de la ventana 
+  min-height: 100vh; */
   max-width: 1300px;  /* Limita el ancho máximo de la sección */
    /* margen (espacio externo) superior, derecho, abajo e izquierda */
    /* margin: 4px 2px 8px 2px;  */
